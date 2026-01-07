@@ -12,7 +12,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        $middleware->validateCsrfTokens(except: [
+        'login',
+        'register', // Add this line
+        'api/*',    // This covers your Artist and Post API routes
+    ]);
+
+    $middleware->statefulApi();
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

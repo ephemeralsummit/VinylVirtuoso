@@ -5,7 +5,9 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicPostController;
 
-
+Route::get('/dashboard', function () {
+    return response()->json(['message' => 'Welcome to the dashboard']);
+})->name('dashboard');
 Route::get('/artists/{artist}', [ArtistController::class, 'show'])->name('artists.show');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 Route::get('artists', [ArtistController::class, 'index'])->name('artists.index');
