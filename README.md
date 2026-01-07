@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ephemeralsummit/VinylVirtuoso/refs/heads/main/public/testsplash%20copy.png" width="512"/>
+    <img src="https://raw.githubusercontent.com/ephemeralsummit/VinylVirtuoso/refs/heads/main/public/testsplash%20copy.png"/>
 </p>
 
 ---
